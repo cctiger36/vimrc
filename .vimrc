@@ -17,10 +17,11 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'msanders/snipmate.vim'
 Bundle 'hallison/vim-markdown'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'wincent/Command-T'
-Bundle 'Align'
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-surround'
+Bundle 'vim-indent-object'
+Bundle 'mattn/zencoding-vim'
 
 set guifont=monaco\ 11
 set number
@@ -32,6 +33,10 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+" Disable vi-compatibility
+set nocompatible
+" Always show the statusline
+set laststatus=2
 
 filetype plugin indent on
 autocmd FileType make       set noexpandtab
@@ -44,8 +49,16 @@ autocmd FileType coffee     set tabstop=2 shiftwidth=2
 
 " au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 syntax enable
-let mapleader = "\\"
-map <leader>F :FufFile<CR>
-map <leader>f :FufTaggedFile<CR>
-map <leader>s :FufTag<CR>
-map <Leader>n :NERDTreeToggle<CR>
+
+map ¥ \
+
+" select all
+map <C-A> ggVG
+
+" hit enter to cancel searched highlight
+noremap <CR> :nohlsearch<CR>
+
+noremap <silent> <Leader>n :NERDTreeToggle<CR>
+
+let g:ctrlp_working_path_mode=0
+let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$'
