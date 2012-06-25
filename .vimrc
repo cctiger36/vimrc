@@ -25,6 +25,7 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'ack.vim'
 Bundle 'ervandew/supertab'
+Bundle 'minibufexpl.vim'
 
 set guifont=monaco\ 11
 set number
@@ -41,6 +42,7 @@ set laststatus=2             " Always show the statusline
 set splitright               " always open vertical split window in the right side
 set splitbelow               " always open horizontal split window below
 set nobackup                 " no backup files
+set hidden                   "in order to switch between buffers with unsaved change 
 
 syntax enable
 
@@ -63,6 +65,9 @@ set wildignore+=tmp/**
 let mapleader=","
 " select all
 map <C-A> ggVG
+map <TAB> :bn<CR>
+map <S-TAB> :bp<CR>
+map ,bd :bd<CR>
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
