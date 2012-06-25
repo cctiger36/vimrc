@@ -60,7 +60,7 @@ set wildignore+=*.DS_Store
 set wildignore+=log/**
 set wildignore+=tmp/**
 
-map ¥ \
+let mapleader=","
 " select all
 map <C-A> ggVG
 " hit enter to cancel searched highlight
