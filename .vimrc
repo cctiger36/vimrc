@@ -27,17 +27,18 @@ Bundle 'ack.vim'
 Bundle 'ervandew/supertab'
 Bundle 'minibufexpl.vim'
 
+set encoding=utf-8
 set guifont=monaco\ 11
 set number
 set incsearch                " incremental search
 set hlsearch                 " search highlight
+set ignorecase
 set autoread                 " auto read when file is changed from outside
 set autoindent
 set tabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
-set nocompatible             " Disable vi-compatibility
 set laststatus=2             " Always show the statusline
 set splitright               " always open vertical split window in the right side
 set splitbelow               " always open horizontal split window below
@@ -59,6 +60,7 @@ set wildignore+=*.png,*.jpg,*.gif,*.ico
 set wildignore+=*.swf,*.fla
 set wildignore+=*.git*,*.hg*,*.svn*
 set wildignore+=*.DS_Store
+set wildignore+=*.swp,*.zip,*.so
 set wildignore+=log/**
 set wildignore+=tmp/**
 
