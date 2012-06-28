@@ -69,10 +69,11 @@ let mapleader=","
 map <C-A> ggVG
 map <TAB> :bn<CR>
 map <S-TAB> :bp<CR>
-map ,bd :bd<CR>
+map <Leader>d :bd<CR>
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
 
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$'
+let g:miniBufExplSplitBelow=0
