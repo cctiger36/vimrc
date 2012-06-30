@@ -1,6 +1,8 @@
 set guioptions-=T
-set background=light
-colorscheme solarized
+" set background=light
+" set background=dark
+" colorscheme solarized
+colorscheme tomorrow
 set cul
 
 " remap cmd + w to close tab

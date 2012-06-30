@@ -16,7 +16,6 @@ Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
 Bundle 'msanders/snipmate.vim'
 Bundle 'hallison/vim-markdown'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-surround'
@@ -26,6 +25,9 @@ Bundle 'mileszs/ack.vim'
 Bundle 'ack.vim'
 Bundle 'ervandew/supertab'
 Bundle 'minibufexpl.vim'
+" Theme
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'chriskempson/vim-tomorrow-theme'
 
 set encoding=utf-8
 set guifont=monaco\ 11
@@ -64,15 +66,26 @@ set wildignore+=*.swp,*.zip,*.so
 set wildignore+=log/**
 set wildignore+=tmp/**
 
+autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml} :%s/\s\+$//e
+
 let mapleader=","
 " select all
 map <C-A> ggVG
 map <TAB> :bn<CR>
 map <S-TAB> :bp<CR>
 map <Leader>d :bd<CR>
+nnoremap j gj
+nnoremap k gk
+noremap H ^
+noremap L $
+" list buffers and switch to a buffer quickly
+nmap <leader>b :ls<CR>:buffer<Space>
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
+noremap <Leader><Leader> <C-^>
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
+" Force Saving Files that Require Root Permission
+cmap w!! %!sudo tee > /dev/null %
 
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$'
