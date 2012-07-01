@@ -25,6 +25,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'ack.vim'
 Bundle 'ervandew/supertab'
 Bundle 'minibufexpl.vim'
+Bundle 'tsaleh/vim-matchit'
 " Theme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/vim-tomorrow-theme'
@@ -76,8 +77,8 @@ map <S-TAB> :bp<CR>
 map <Leader>d :bd<CR>
 nnoremap j gj
 nnoremap k gk
-noremap H ^
-noremap L $
+nnoremap <C-H> ^
+nnoremap <C-L> $
 " list buffers and switch to a buffer quickly
 nmap <leader>b :ls<CR>:buffer<Space>
 " hit enter to cancel searched highlight
