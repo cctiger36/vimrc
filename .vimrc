@@ -26,6 +26,7 @@ Bundle 'ack.vim'
 Bundle 'ervandew/supertab'
 Bundle 'minibufexpl.vim'
 Bundle 'tsaleh/vim-matchit'
+Bundle 'Lokaltog/vim-easymotion'
 " Theme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/vim-tomorrow-theme'
@@ -67,7 +68,7 @@ set wildignore+=*.swp,*.zip,*.so
 set wildignore+=log/**
 set wildignore+=tmp/**
 
-autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml} :%s/\s\+$//e
+" autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml} :%s/\s\+$//e
 
 let mapleader=","
 " select all
@@ -80,7 +81,7 @@ nnoremap k gk
 nnoremap <C-H> ^
 nnoremap <C-L> $
 " list buffers and switch to a buffer quickly
-nmap <leader>b :ls<CR>:buffer<Space>
+nmap <Leader>s :ls<CR>:buffer<Space>
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
 noremap <Leader><Leader> <C-^>
@@ -91,3 +92,4 @@ cmap w!! %!sudo tee > /dev/null %
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$'
 let g:miniBufExplSplitBelow=0
+let g:EasyMotion_leader_key='<Leader>'
