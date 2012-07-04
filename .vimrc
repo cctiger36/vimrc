@@ -85,7 +85,7 @@ nmap <Leader>s :ls<CR>:buffer<Space>
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
 noremap <Leader><Leader> <C-^>
-noremap <silent> <Leader>n :NERDTreeToggle<CR>
+noremap <silent> <F2> :NERDTreeToggle<CR>
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
 
