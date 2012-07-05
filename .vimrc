@@ -24,9 +24,11 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'ack.vim'
 Bundle 'ervandew/supertab'
-Bundle 'minibufexpl.vim'
+" Bundle 'minibufexpl.vim'
+Bundle 'corntrace/bufexplorer'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
+
 " Theme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/vim-tomorrow-theme'
@@ -82,6 +84,7 @@ nnoremap <C-H> ^
 nnoremap <C-L> $
 " list buffers and switch to a buffer quickly
 nmap <Leader>s :ls<CR>:buffer<Space>
+nmap <Space> :BufExplorer<CR>
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
 noremap <Leader><Leader> <C-^>
@@ -90,6 +93,7 @@ noremap <silent> <F2> :NERDTreeToggle<CR>
 cmap w!! %!sudo tee > /dev/null %
 
 let g:ctrlp_working_path_mode=0
-let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$|\.rsync_cache$'
 let g:miniBufExplSplitBelow=0
 let g:EasyMotion_leader_key='<Leader>'
+let g:bufExplorerDefaultHelp=0
