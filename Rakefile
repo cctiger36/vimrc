@@ -5,5 +5,5 @@ task :deploy do
   system "cp .vimrc .gvimrc ~/"
   system "vim +BundleInstall +qall"
   # delete the default BufExplorer key mapping
-  system "sed -i -e '/^[[:space:]]*[nmap|nunmap]/d' ~/.vim/bundle/bufexplorer/plugin/bufexplorer.vim"
+  system "sed -i -e '/^[[:space:]]*nmap/d' ~/.vim/bundle/bufexplorer/plugin/bufexplorer.vim"
 end

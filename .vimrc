@@ -82,6 +82,10 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <C-H> ^
 nnoremap <C-L> $
+noremap <C-H> <ESC><C-W>h
+noremap <C-J> <ESC><C-W>j
+noremap <C-K> <ESC><C-W>k
+noremap <C-L> <ESC><C-W>l
 " list buffers and switch to a buffer quickly
 nmap <Leader>s :ls<CR>:buffer<Space>
 nmap <Space> :BufExplorer<CR>
