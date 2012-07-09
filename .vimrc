@@ -34,7 +34,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/vim-tomorrow-theme'
 
 set encoding=utf-8
-set guifont=monaco\ 11
+set guifont=monaco:h12
 set number
 set incsearch                " incremental search
 set hlsearch                 " search highlight
@@ -82,10 +82,6 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <C-H> ^
 nnoremap <C-L> $
-noremap <C-H> <ESC><C-W>h
-noremap <C-J> <ESC><C-W>j
-noremap <C-K> <ESC><C-W>k
-noremap <C-L> <ESC><C-W>l
 " list buffers and switch to a buffer quickly
 nmap <Leader>s :ls<CR>:buffer<Space>
 nmap <Space> :BufExplorer<CR>
@@ -101,3 +97,4 @@ let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$|\.rsync_cache$'
 let g:miniBufExplSplitBelow=0
 let g:EasyMotion_leader_key='<Leader>'
 let g:bufExplorerDefaultHelp=0
+let g:rails_ctags_arguments='--exclude=.svn --exclude=.rsync_cache'
