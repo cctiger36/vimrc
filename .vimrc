@@ -70,6 +70,8 @@ set wildignore+=*.swp,*.zip,*.so
 set wildignore+=log/**
 set wildignore+=tmp/**
 
+silent! colorscheme Tomorrow-Night-Eighties
+
 " autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml} :%s/\s\+$//e
 
 let mapleader=","
@@ -93,8 +95,8 @@ noremap <silent> <F2> :NERDTreeToggle<CR>
 cmap w!! %!sudo tee > /dev/null %
 
 let g:ctrlp_working_path_mode=0
-let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$|\.rsync_cache$'
+let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$\|\.rsync_cache$'
 let g:miniBufExplSplitBelow=0
 let g:EasyMotion_leader_key='<Leader>'
 let g:bufExplorerDefaultHelp=0
-let g:rails_ctags_arguments='--exclude=.svn --exclude=.rsync_cache'
+let g:rails_ctags_arguments='--exclude=.git --exclude=.svn --exclude=.rsync_cache'
