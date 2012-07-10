@@ -1,4 +1,4 @@
-## VIM config with vundle
+# VIM config with vundle
 
 ## Usage
 
