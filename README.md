@@ -1,6 +1,4 @@
-# VIM config with vundle
-
-Execute commands on schedule.
+## VIM config with vundle
 
 ## Usage
 
