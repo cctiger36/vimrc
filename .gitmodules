@@ -1,3 +1,3 @@
 [submodule "snipmate-snippets"]
-    path = snipmate-snippets
-    url = git://github.com/cctiger36/snipmate-snippets.git
+	path = snipmate-snippets
+	url = git://github.com/cctiger36/snipmate-snippets.git
