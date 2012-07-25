@@ -77,9 +77,10 @@ silent! colorscheme Tomorrow-Night-Eighties
 let mapleader=","
 " select all
 map <C-A> ggVG
-map <TAB> :bn<CR>
-map <S-TAB> :bp<CR>
 map <Leader>d :bd<CR>
+map <F1> <ESC>
+nmap <silent> <TAB> :wincmd w<CR>
+nmap <silent> <S-TAB> :wincmd W<CR>
 nnoremap j gj
 nnoremap k gk
 nnoremap <C-H> ^
@@ -100,3 +101,4 @@ let g:miniBufExplSplitBelow=0
 let g:EasyMotion_leader_key='<Leader>'
 let g:bufExplorerDefaultHelp=0
 let g:rails_ctags_arguments='--exclude=.git --exclude=.svn --exclude=.rsync_cache'
+let g:user_zen_expandabbr_key='<C-Z>'
