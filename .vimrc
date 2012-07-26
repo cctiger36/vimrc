@@ -65,7 +65,7 @@ autocmd FileType coffee     set tabstop=2 shiftwidth=2
 set wildignore+=*.png,*.jpg,*.gif,*.ico
 set wildignore+=*.swf,*.fla
 set wildignore+=*.git*,*.hg*,*.svn*
-set wildignore+=*.rsync*
+set wildignore+=*.rsync_cache*
 set wildignore+=*.DS_Store
 set wildignore+=*.swp,*.zip,*.so
 set wildignore+=log/**
