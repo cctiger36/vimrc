@@ -50,6 +50,7 @@ set splitright               " always open vertical split window in the right si
 set splitbelow               " always open horizontal split window below
 set nobackup                 " no backup files
 set hidden                   "in order to switch between buffers with unsaved change 
+set cul
 
 syntax enable
 
