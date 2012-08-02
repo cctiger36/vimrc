@@ -24,7 +24,6 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'ack.vim'
 Bundle 'ervandew/supertab'
-" Bundle 'minibufexpl.vim'
 Bundle 'corntrace/bufexplorer'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
@@ -77,7 +76,6 @@ silent! colorscheme Tomorrow-Night-Eighties
 " autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml} :%s/\s\+$//e
 
 let mapleader=","
-" select all
 map <C-A> ggVG
 map <Leader>d :bd<CR>
 map <F1> <ESC>
@@ -87,10 +85,8 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <C-H> ^
 nnoremap <C-L> $
-" list buffers and switch to a buffer quickly
 nmap <Leader>s :ls<CR>:buffer<Space>
 nmap <Space> :BufExplorer<CR>
-" hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
 noremap <Leader><Leader> <C-^>
 noremap <silent> <F2> :NERDTreeToggle<CR>
@@ -101,7 +97,6 @@ cmap w!! %!sudo tee > /dev/null %
 
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$\|\.rsync_cache$'
-let g:miniBufExplSplitBelow=0
 let g:EasyMotion_leader_key='<Leader>'
 let g:bufExplorerDefaultHelp=0
 let g:rails_ctags_arguments='--exclude=.git --exclude=.svn --exclude=.rsync_cache'
