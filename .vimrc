@@ -90,8 +90,6 @@ nmap <Space> :BufExplorer<CR>
 noremap <CR> :nohlsearch<CR>
 noremap <Leader><Leader> <C-^>
 noremap <silent> <F2> :NERDTreeToggle<CR>
-vnoremap < <gv
-vnoremap > >gv
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
 
