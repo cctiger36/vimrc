@@ -27,13 +27,14 @@ Bundle 'ervandew/supertab'
 Bundle 'corntrace/bufexplorer'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Tagbar'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/vim-tomorrow-theme'
 
 set encoding=utf-8
-set guifont=monaco:h12
+set guifont=Menlo:h13
 set number
 set incsearch                " incremental search
 set hlsearch                 " search highlight
@@ -90,6 +91,7 @@ nmap <Space> :BufExplorer<CR>
 noremap <CR> :nohlsearch<CR>
 noremap <Leader><Leader> <C-^>
 noremap <silent> <F2> :NERDTreeToggle<CR>
+noremap <silent> <F3> :TagbarToggle<CR>
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
 
