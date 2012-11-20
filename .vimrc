@@ -28,6 +28,7 @@ Bundle 'corntrace/bufexplorer'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Tagbar'
+Bundle 'vim-coffee-script'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
@@ -62,6 +63,9 @@ autocmd FileType ruby,rdoc  set tabstop=2 shiftwidth=2
 autocmd FileType html       set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee     set tabstop=2 shiftwidth=2
+
+autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
+autocmd BufNewFile,BufRead *.js.erb   set filetype=javascript.eruby
 
 set wildignore+=*.png,*.jpg,*.gif,*.ico
 set wildignore+=*.swf,*.fla
