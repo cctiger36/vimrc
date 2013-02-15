@@ -33,6 +33,7 @@ Bundle 'vim-coffee-script'
 " Theme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'tomasr/molokai'
 
 set encoding=utf-8
 set guifont=Menlo:h13
