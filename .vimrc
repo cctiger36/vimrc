@@ -29,6 +29,8 @@ Bundle 'tsaleh/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Tagbar'
 Bundle 'vim-coffee-script'
+Bundle 'vim-stylus'
+Bundle 'jade.vim'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
