@@ -31,6 +31,7 @@ Bundle 'Tagbar'
 Bundle 'vim-coffee-script'
 Bundle 'vim-stylus'
 Bundle 'jade.vim'
+Bundle 'slim-template/vim-slim'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
