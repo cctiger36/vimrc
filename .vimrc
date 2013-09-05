@@ -101,6 +101,11 @@ noremap <silent> <F3> :TagbarToggle<CR>
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
 
+nmap <Leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+imap <Leader>p <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+nmap <Leader>c :.w !pbcopy<CR><CR>
+vmap <Leader>c :w !pbcopy<CR><CR>
+
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$\|\.rsync_cache$'
 let g:EasyMotion_leader_key='<Leader>'
