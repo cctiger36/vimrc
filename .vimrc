@@ -101,8 +101,8 @@ noremap <silent> <F3> :TagbarToggle<CR>
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
 
-nmap <Leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
-imap <Leader>p <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+nmap <Leader>v :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+imap <Leader>v <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 nmap <Leader>c :.w !pbcopy<CR><CR>
 vmap <Leader>c :w !pbcopy<CR><CR>
 
