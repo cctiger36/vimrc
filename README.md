@@ -8,4 +8,4 @@ Copy the repository:
 
 And then execute:
 
-    $ rake deploy
+    $ ./install.sh
