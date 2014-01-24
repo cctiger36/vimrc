@@ -32,6 +32,7 @@ Bundle 'vim-stylus'
 Bundle 'jade.vim'
 Bundle 'slim-template/vim-slim'
 Bundle 'bling/vim-airline'
+Bundle 'rking/ag.vim'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
