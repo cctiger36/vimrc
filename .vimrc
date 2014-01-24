@@ -14,7 +14,10 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
-Bundle 'msanders/snipmate.vim'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
 Bundle 'hallison/vim-markdown'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
