@@ -33,6 +33,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'bling/vim-airline'
 Bundle 'rking/ag.vim'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'Handlebars'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
@@ -70,6 +71,8 @@ autocmd FileType ruby,rdoc  set tabstop=2 shiftwidth=2
 autocmd FileType html       set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee     set tabstop=2 shiftwidth=2
+
+autocmd BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
 
 set wildignore+=*.png,*.jpg,*.gif,*.ico
 set wildignore+=*.swf,*.fla
