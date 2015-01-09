@@ -34,6 +34,7 @@ Bundle 'bling/vim-airline'
 Bundle 'rking/ag.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Handlebars'
+Bundle 'rizzatti/dash.vim'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
@@ -110,6 +111,8 @@ nmap <Leader>v :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 imap <Leader>v <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 nmap <Leader>c :.w !pbcopy<CR><CR>
 vmap <Leader>c :w !pbcopy<CR><CR>
+
+nmap <silent> K <Plug>DashSearch
 
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$\|\.rsync_cache$'
