@@ -35,6 +35,7 @@ Bundle 'rking/ag.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Handlebars'
 Bundle 'rizzatti/dash.vim'
+Bundle 'derekwyatt/vim-scala'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
