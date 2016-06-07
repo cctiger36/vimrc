@@ -1,46 +1,48 @@
-" git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-" BundleInstall
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" PluginInstall
 
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/vundle.vim
+call vundle#begin()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
-Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/nerdtree'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
-Bundle 'hallison/vim-markdown'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-indent-object'
-Bundle 'ervandew/supertab'
-Bundle 'corntrace/bufexplorer'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Tagbar'
-Bundle 'vim-coffee-script'
-Bundle 'vim-stylus'
-Bundle 'jade.vim'
-Bundle 'slim-template/vim-slim'
-Bundle 'bling/vim-airline'
-Bundle 'rking/ag.vim'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'Handlebars'
-Bundle 'rizzatti/dash.vim'
-Bundle 'derekwyatt/vim-scala'
+Plugin 'tpope/vim-rails'
+Plugin 'scrooloose/nerdtree'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'hallison/vim-markdown'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-indent-object'
+Plugin 'ervandew/supertab'
+Plugin 'corntrace/bufexplorer'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'Tagbar'
+Plugin 'vim-coffee-script'
+Plugin 'vim-stylus'
+Plugin 'jade.vim'
+Plugin 'slim-template/vim-slim'
+Plugin 'bling/vim-airline'
+Plugin 'rking/ag.vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'Handlebars'
+Plugin 'rizzatti/dash.vim'
+Plugin 'derekwyatt/vim-scala'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'tomasr/molokai'
+
+call vundle#end()
+filetype plugin indent on
 
 set encoding=utf-8
 set guifont=Menlo:h13
