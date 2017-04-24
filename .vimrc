@@ -35,6 +35,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Handlebars'
 Plugin 'rizzatti/dash.vim'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'elixir-lang/vim-elixir'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
