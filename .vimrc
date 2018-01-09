@@ -36,6 +36,7 @@ Plugin 'Handlebars'
 Plugin 'rizzatti/dash.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'tomlion/vim-solidity'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
