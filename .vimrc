@@ -88,6 +88,7 @@ set wildignore+=*.DS_Store
 set wildignore+=*.swp,*.zip,*.so
 set wildignore+=log/**
 set wildignore+=tmp/**
+set wildignore+=_build/**
 
 silent! colorscheme Tomorrow-Night-Eighties
 
@@ -126,3 +127,4 @@ let g:bufExplorerDefaultHelp=0
 let g:rails_ctags_arguments='--exclude=.git --exclude=.svn --exclude=.rsync_cache'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+let g:ctrlp_max_files = 30000
