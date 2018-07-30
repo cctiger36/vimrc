@@ -37,6 +37,8 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'tomlion/vim-solidity'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'trevordmiller/nova-vim'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
@@ -62,7 +64,7 @@ set laststatus=2             " Always show the statusline
 set splitright               " always open vertical split window in the right side
 set splitbelow               " always open horizontal split window below
 set nobackup                 " no backup files
-set hidden                   "in order to switch between buffers with unsaved change 
+set hidden                   " in order to switch between buffers with unsaved change
 set cul
 set backspace=indent,eol,start
 
@@ -70,7 +72,7 @@ syntax enable
 
 filetype plugin indent on
 autocmd FileType make       set noexpandtab
-autocmd FileType python     set noexpandtab
+autocmd FileType python     set tabstop=4 shiftwidth=4
 autocmd FileType eruby      set tabstop=2 shiftwidth=2
 autocmd FileType slim       set tabstop=2 shiftwidth=2
 autocmd FileType ruby,rdoc  set tabstop=2 shiftwidth=2
