@@ -123,7 +123,7 @@ vmap <Leader>c :w !pbcopy<CR><CR>
 nmap <silent> K <Plug>DashSearch
 
 let g:ctrlp_working_path_mode=0
-let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$\|\.rsync_cache$'
+let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$\|\.rsync_cache$\|_build$'
 let g:EasyMotion_leader_key='<Leader>'
 let g:bufExplorerDefaultHelp=0
 let g:rails_ctags_arguments='--exclude=.git --exclude=.svn --exclude=.rsync_cache'
