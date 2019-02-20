@@ -39,6 +39,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'tomlion/vim-solidity'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'trevordmiller/nova-vim'
+Plugin 'jalvesaq/Nvim-R'
 
 " Theme
 Bundle 'altercation/vim-colors-solarized'
