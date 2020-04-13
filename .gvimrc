@@ -1,7 +1,7 @@
 set guioptions-=T
 " set background=light
 set background=dark
-colorscheme nova
+colorscheme solarized
 
 " remap cmd + w to close tab
 map <D-w> :tabclose<CR>

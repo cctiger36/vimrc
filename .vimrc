@@ -1,53 +1,31 @@
-" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-" PluginInstall
-
 set nocompatible               " be iMproved
-filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" My Bundles here:
-Plugin 'tpope/vim-rails'
-Plugin 'scrooloose/nerdtree'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'hallison/vim-markdown'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-indent-object'
-Plugin 'ervandew/supertab'
-Plugin 'corntrace/bufexplorer'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'Tagbar'
-Plugin 'vim-coffee-script'
-Plugin 'vim-stylus'
-Plugin 'jade.vim'
-Plugin 'slim-template/vim-slim'
-Plugin 'bling/vim-airline'
-Plugin 'rking/ag.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'Handlebars'
-Plugin 'rizzatti/dash.vim'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'tomlion/vim-solidity'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'trevordmiller/nova-vim'
-Plugin 'jalvesaq/Nvim-R'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-rails'
+Plug 'scrooloose/nerdtree'
+Plug 'hallison/vim-markdown'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-surround'
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'ervandew/supertab'
+Plug 'corntrace/bufexplorer'
+Plug 'slim-template/vim-slim'
+Plug 'bling/vim-airline'
+Plug 'rking/ag.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'rizzatti/dash.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'elixir-lang/vim-elixir'
+Plug 'tomlion/vim-solidity'
 
 " Theme
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'tomasr/molokai'
+Plug 'altercation/vim-colors-solarized'
+Plug 'morhetz/gruvbox'
 
-call vundle#end()
-filetype plugin indent on
+call plug#end()
 
 set encoding=utf-8
 set guifont=Menlo:h13
@@ -65,7 +43,7 @@ set laststatus=2             " Always show the statusline
 set splitright               " always open vertical split window in the right side
 set splitbelow               " always open horizontal split window below
 set nobackup                 " no backup files
-set hidden                   " in order to switch between buffers with unsaved change
+set hidden                   " in order to switch between buffers with unsaved change 
 set cul
 set backspace=indent,eol,start
 
@@ -79,7 +57,6 @@ autocmd FileType slim       set tabstop=2 shiftwidth=2
 autocmd FileType ruby,rdoc  set tabstop=2 shiftwidth=2
 autocmd FileType html       set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
-autocmd FileType coffee     set tabstop=2 shiftwidth=2
 
 autocmd BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
 
@@ -91,7 +68,6 @@ set wildignore+=*.DS_Store
 set wildignore+=*.swp,*.zip,*.so
 set wildignore+=log/**
 set wildignore+=tmp/**
-set wildignore+=_build/**
 
 silent! colorscheme Tomorrow-Night-Eighties
 
@@ -124,10 +100,9 @@ vmap <Leader>c :w !pbcopy<CR><CR>
 nmap <silent> K <Plug>DashSearch
 
 let g:ctrlp_working_path_mode=0
-let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$\|\.rsync_cache$\|_build$'
+let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$\|\.rsync_cache$'
 let g:EasyMotion_leader_key='<Leader>'
 let g:bufExplorerDefaultHelp=0
 let g:rails_ctags_arguments='--exclude=.git --exclude=.svn --exclude=.rsync_cache'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:ctrlp_max_files = 30000
